@@ -1,0 +1,67 @@
+.contact__us {
+    background: #F4F9FC;
+    padding: 100px 0;
+    .contact__us__row {
+        justify-content: space-between;
+        .contact__us__item {
+            h4 {
+                font-weight: 500;
+                font-size: 25px;
+                line-height: 40px;
+                color: $text-primary-color;
+            }
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                color: $text-primary-color;
+                opacity: 0.6;
+            }
+            .form__wrapper {
+                button {
+                    height: 50px;
+                    width: 122px;
+                    font-size: 14px;
+                    line-height: 23px;
+                    padding: 0;
+                    justify-content: center;
+                    @media screen and(max-width: 485px){
+                        padding: 0 20px;
+                    }
+                    @media screen and(max-width: 365px){
+                        font-size: 12px;
+                        width: 97px;
+                    }
+                }
+                input {
+                    width: 335px;
+                    background: #FFFFFF;
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 21px;
+                    padding: 15px 26px;
+                    height: 50px;
+                    @media screen and(max-width: 485px) {
+                        width: 100%;
+                    }
+                    @media screen and(max-width: 365px) {
+                        padding: 15px;
+                    }
+                }
+            }
+            @media screen and(max-width:768px) {
+                margin-top: 20px;
+                width: 100%;
+            }
+        }
+        @media screen and(max-width:768px) {
+            flex-direction: column;
+            width: 100%;
+            align-items: flex-start;
+        }
+    }
+    @media screen and(max-width:768px) {
+        padding: 50px 0;
+    }
+}

@@ -1,0 +1,96 @@
+body {
+    font-family: 'Hind Siliguri', sans-serif;
+    background: $base-color;
+}
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+button.icon__btns {
+    border: none;
+    background: none;
+    outline: none;
+}
+.flexible {
+    display: flex;
+    align-items: center;
+}
+a.navigation__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: $text-primary-color;
+}
+button.main__btn {
+    background: $primary-color;
+    padding: 16px 35px;
+    text-transform: uppercase;
+    color: $base-color;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    @media screen and(max-width: 768px){
+        padding: 13px 30px;
+        font-size: 14px;
+    }
+}
+h2.main__title {
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 71px;
+    color: $text-primary-color;
+    @media screen and(max-width: 768px){
+        font-size: 35px;
+        line-height: 60px;
+    }
+}
+span.sub__title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0.145em;
+    text-transform: uppercase;
+    color: #C72535;
+    opacity: 0.6;
+    @media screen and(max-width: 525px){
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+.description__option__btns {
+    justify-content: space-between;
+    transition: 0.3s ease-in;
+    button.option__btn {
+        border:none;
+        background: none;
+        width: 20px;
+        height: 20px;
+        img {
+            width: 100%;
+        }
+    }
+}
+.price__wrapper {
+    margin-top: 0;
+    transition: 0.3s ease-in;
+    span {
+        color: $text-primary-color;
+    }
+    span.product__price {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 27px;
+    }
+    span.discount__price {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 27px;
+        text-decoration-line: line-through;
+        opacity: 0.5;
+    }
+}
